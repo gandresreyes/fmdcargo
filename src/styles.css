@@ -1,1 +1,36 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+    overflow-x: hidden;
+}
+.center-obj{
+    display: grid;
+    place-content: center;
+}
+.border{
+    width: 0;
+    height: 0;
+    border-style: solid !important;
+    border-width: 50px 100vw 0 0 !important;
+    border-color: transparent var(--colobor) transparent transparent !important;
+
+}
+.z-index{
+    z-index: 9999;
+}
+
+/*bgbaderas*/
+.flags{ position: absolute;
+    object-position: center center;
+    pointer-events: none;
+    border-radius: 50%;
+    box-shadow: var(--shadow-small);
+    image-rendering: optimizespeed;
+    animation-name: bgflag;
+    animation-duration: 300s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes bgflag{
+    0%{transform:translateX(1600px)}
+    to{transform:translateX(-1600px)}
+}
