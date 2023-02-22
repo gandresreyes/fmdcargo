@@ -1,15 +1,18 @@
-<app-paradax></app-paradax>
-<div  style="position: relative ">
-    <div class="container-fluid bg" style="background-image: url(assets/img/bgMoon.svg);">
+<app-banner></app-banner>
+<div style="position: relative ">
+    <div class="container-fluid bgicons">
         <div class="container">
-            <div class="row bg py-5" >        
+            <div class="row bg py-5">
+                <div class="text-center text-dark pb-5">
+                    <h2 class="titulo2">Bienvenido a FMD CARGO</h2>
+                </div>
                 <div class="col-lg-4 ">
                     <div class="card mb-3 ">
                         <div class="card-body text-center">
                             <div class="circulo center-obj mx-auto">
-                                <img  src="assets/img/truck2.svg" width="90" height="90" alt="">                        
+                                <img src="assets/img/truck2.svg" width="90" height="90" alt="">
                             </div>
-                            <h2 class="text-white">Transporte terrestre </h2> 
+                            <h2 class="text-dark">Transporte terrestre </h2>
                         </div>
                     </div>
                 </div>
@@ -17,9 +20,9 @@
                     <div class="card  mb-3">
                         <div class="card-body text-center">
                             <div class="circulo center-obj mx-auto">
-                                <img  src="assets/img/airplane.svg" width="90" height="90" alt="">                        
+                                <img src="assets/img/airplane.svg" width="90" height="90" alt="">
                             </div>
-                            <h2 class="text-white">Transporte aéreo </h2> 
+                            <h2 class="text-dark">Transporte aéreo </h2>
                         </div>
                     </div>
                 </div>
@@ -27,46 +30,217 @@
                     <div class="card  mb-3">
                         <div class="card-body text-center">
                             <div class="circulo center-obj mx-auto">
-                                <img  src="assets/img/ship2.svg" width="90" height="90" alt="">                        
+                                <img src="assets/img/ship2.svg" width="90" height="90" alt="">
                             </div>
-                            <h2 class="text-white">Transporte marítimo </h2> 
+                            <h2 class="text-dark">Transporte marítimo </h2>
                         </div>
                     </div>
                 </div>
-            </div>  
-        </div>    
-    </div>
-    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;height: 80vh" >
-        <app-banderas></app-banderas>
-        <div class="col-lg-6 mx-auto z-index">
-            <div class="cardflags" >
-                <div class="px-4 py-3 text-center ">
-                    <img   ngSrc="assets/img/world.gif" width="200" height="200"  style="filter: invert(1) drop-shadow(2px 4px 6px #083955);" alt="">
-                   <h2 class="flag-til">Conectamos  el mundo mediante soluciones de transporte y logística para nuestros clientes.</h2> 
+                <div class=" col-lg-8 text-center text-dark mt-5 mx-auto">
+                    <p style="font-size: 1.24em; line-height: 1.5em;">Contamos con servicios de transporte terrestre,
+                        aéreo y marítimo internacional, abastecemos un tráfico de carga a nivel mundial en importaciones
+                        y exportaciones de cualquier tipo de carga ubicándola en puertos, bodegas, o la puerta de su
+                        cliente.</p>
                 </div>
             </div>
         </div>
-        
     </div>
+    <section>
+        <div>
+            <div class="border" style="--colobor:#ffebeb; "></div>
+        </div>
+        <div style="background-color:#ffebeb ;">
+            <div class="container py-4">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
+                        <button class="btn text-white btn-line" style="background-color:#dd0031 ;">Contactanos</button>
+                    </div>
+                    <div class="col-lg-6 text-center">
+                        <button class="btn text-white btn-line" style="background-color:#dd0031 ;">servicios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border" style="--colobor:#dd0031;background-color:#ffebeb ;"></div>
+        <div style="background-color:#dd0031 ;">
+            <div class="container py-5">
+                <div class="row text-center">
+                    <div class="col-lg-3">
+                        <h2 class="cont">172</h2>
+                        <span class="text-white">Envíos terrestre</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="cont">7256</h2>
+                        <span class="text-white">Envíos aéreos</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="cont">320</h2>
+                        <span class="text-white">Envíos marítimos</span>
+                    </div>
+                    <div class="col-lg-3">
+                        <h2 class="cont">7306</h2>
+                        <span class="text-white">Carga enviada</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="borderDown " style="--colobor:#dd0031"></div>
 
-    <div>
-        <div class="border" style="--colobor:#571e22"></div>
-        <div style="background-color: #571e22; height: 500px;">
-
+    </section>
+    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;height: 80vh">
+        <app-banderas></app-banderas>
+        <div class="col-lg-6 mx-auto z-index">
+            <div class="cardflags">
+                <div class="px-4 py-3 text-center ">
+                    <div class="d-flex justify-content-center z-index">
+                        <ng-lottie height="160px" [options]="options"
+                            [styles]="{'filter': 'drop-shadow(0px 0px 0px #0005)'}"></ng-lottie>
+                    </div>
+                    <h2 class="flag-til">Conectamos el mundo mediante soluciones de transporte y logística para nuestros
+                        clientes.</h2>
+                </div>
+            </div>
         </div>
     </div>
 
-    <!--bglines-->
+    <div>
+        <div class="border" style="--colobor:#ffebeb"></div>
+        <div style="background-color: #ffebeb;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 z-index">
+                        <h3 class="text-center titulo2 py-5">¿Que nos hace especiales?</h3>
+                        <p class="parrafos">Transportamos cualquier tipo de mercancía, efectos personales, carga sobre
+                            dimensionada, restos humanos, animales vivos, flores frescas, fruta fresca, carga de control
+                            de temperatura.</p>
+
+                        <p class="parrafos"> Ofrecemos servicios de agenciamiento de carga para exportaciones e
+                            importaciones:</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="text-center titulo2 py-5">Preguntas frecuentes</h3>
+                        <div class="accordion pb-5" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        <span class="pregunta">¿Cuáles son las baterías de Litio que acepta Aerolíneas
+                                            Cargo?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse " aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        Existen dos tipos de Baterías de Litio:
+                                        <ol type="A">
+                                            <li>Baterías de Ión Litio (incluidas las baterías poliméricas de ión Litio):
+                                                Esta denominación abarca a las Pilas y Baterías de ión litio,
+                                                frecuentemente recargables. Generalmente se utilizan para el
+                                                funcionamiento de equipos electrónicos portátiles (celulares,
+                                                computadoras personales, videocámaras, cámaras de fotos, juegos
+                                                electrónicos, etc) El riesgo se mide por su capacidad energética,
+                                                establecida en Watios Hora (Wh), parámetro que se muestra en cada pila o
+                                                batería.</li>
+                                            <li>Baterías de Metal Litio (incluidas las baterías de aleación de litio):
+                                                Este tipo de baterías se encuentra TOTALMENTE PROHIBIDO para el
+                                                transporte en aviones de pasajeros.
+                                                El Grupo Aerolíneas estableció que sólo serán aceptadas las baterías de
+                                                litio exceptuadas con los siguientes límites de aceptación.
+                                                Las Pilas Ión Litio no han de superar los 20 Wh de carga energética.
+                                                Las Baterías de Ión Litio no han de superar los 100 Wh de carga
+                                                energética.
+                                            </li>
+
+                                        </ol>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        <span class="pregunta">¿Que documentación debe acompañar este tipo de
+                                            envíos?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        El expedidor deberá definir cuál es la condición de su embarque, para ello
+                                        dispone de las siguientes formas, para dar cumplimiento a tal exigencia
+                                        <ol type="A">
+                                            <li>Declaración para embarques de Baterías de Litio:
+                                                Esta Declaración es suministrada por el Grupo Aerolíneas a requerimiento
+                                                del expedidor. En este documento, el Expedidor señalará marcando con una
+                                                “X”, cuál es la condición de su embarque; indicando de esta manera, el
+                                                Número de Naciones Unidas de su mercancía, la Instrucción de Embalaje
+                                                pertinente y la sección aplicada y el tipo de elemento que pretende
+                                                transportar. Deberá consignar un teléfono 24 hs de atención ante
+                                                cualquier requerimiento de información durante el transporte. El
+                                                documento mencionado deberá estar fechado y firmado por el Expedidor o
+                                                su Agente.</li>
+                                            <li>MSDS – Hoja de Seguridad – Ficha Técnica o Nota Empresaria:
+                                                El Expedidor puede presente en forma alternativa a la Declaración para
+                                                Embarques de Baterías de Litio, un MSDS (Hoja de Seguridad), Ficha
+                                                técnica o Nota Empresaria debidamente firmada por un responsable del
+                                                envío. Es imprescindible que en los escritos mencionados figuren los
+                                                datos requeridos en la Declaración, para la correcta clasificación de
+                                                las baterías de Litio a transportar (número ONU – Instrucción de
+                                                Embalaje – Sección aplicable).
+                                            </li>
+
+                                        </ol>
+
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span class="pregunta">¿Como deben estar embaladas?</span>
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>Condiciones Generales de Embalaje:</strong>
+
+                                        Los embalajes de estas mercancías, requieren que los mismos, se ajusten a la
+                                        Condición CPU (Capacidad, Peso y Uso), aplicable a los embalajes exteriores,
+                                        como así también a los Sobre embalajes.
+                                        Las Pilas ó Baterías serán de un tipo que cumple con los requisitos de cada
+                                        prueba establecida en el Manual de Pruebas y Criterios, Parte III, subsección
+                                        38.3 de las Naciones Unidas.
+                                        Los embalajes no pueden contener residuos de Pilas o Baterías de Litio y no
+                                        pueden contener Pilas o Baterías que han sido retiradas del mercado y / o
+                                        defectuosas. Las Pilas o Baterías deben estar protegidas para impedir que se
+                                        produzcan cortocircuitos, como así también se incluya protección frente al
+                                        contacto con materiales conductores dentro del mismo embalaje que pudieran
+                                        provocar cortocircuitos.
+                                        En los embalajes que contengan equipos, estos han de estar sujetos para impedir
+                                        movimientos dentro del embalaje exterior y embalados de forma de evitar una
+                                        puesta en funcionamiento accidental durante el transporte.
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="borderDown bg-dark" style="--colobor:#ffebeb"></div>
+    </div>
+</div>
+<!--bglines-->
+<!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
-    </div> 
-    
-</div>
-<div class="text-center bg-dark">
-    
-</div>
-
-
-
+    </div> -->

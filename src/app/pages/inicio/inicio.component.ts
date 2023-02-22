@@ -1,4 +1,5 @@
 import { Component,  OnInit,  } from '@angular/core';
+import { AnimationOptions } from 'ngx-lottie';
 
 
 @Component({
@@ -7,11 +8,13 @@ import { Component,  OnInit,  } from '@angular/core';
   styleUrls: ['./inicio.component.css']
 })
 export class InicioComponent  implements OnInit  {
-
-  
-
+  options: AnimationOptions = {
+    path: '/assets/lottie/world.json',    
+  };   
   ngOnInit(): void {    
    
   } 
+  
+  
  
 }

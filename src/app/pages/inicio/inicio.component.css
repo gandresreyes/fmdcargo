@@ -1,24 +1,31 @@
-.bg{
-    background-size: contain;
-}
 .card{
     background-color: transparent;
     backdrop-filter: blur(3px);
     border-color:#ffffff2f ;
-    background-image: linear-gradient(150deg, transparent 40%, #ffffff1e );
+    background-image: linear-gradient(150deg, transparent 40%, #f9e4e4 );
     z-index: 99;
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    box-shadow:0 4px 30px rgba(22, 91, 219, 0.253);
    
 }
 .cardflags{
-  background-image: linear-gradient(150deg, transparent 40%, #ffffff1e );
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  background-image: linear-gradient(150deg, transparent 40%, #ffffff70 );
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur( 10px );
   -webkit-backdrop-filter: blur( 4px );
   border-radius: 10px;
-  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.336);
   z-index: 99;
 
+}
+.btn-line{
+  width: 280px;
+  padding: 15px 10px;
+  font-weight: 400;
+  font-size: 1.2em;
+  transition: 0.5s all;
+}
+.btn-line:hover{
+  transform: translateY(-5px);
 }
 .card:hover{
   border-color: #fff;
@@ -30,15 +37,51 @@
  transform: scale(1.5);
  
 }
-
 .circulo{
     width: 120px;
     height: 120px;
     border: 1px solid  #ffffff2f ;
     border-radius: 50%;
-    background-image: linear-gradient(90deg,#57a8d76e, #a448e36e);
+    background-color:#dd0031 ;
 
 }  
+.flag-til{
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -.04em;
+  
+}
+
+.titulo2{
+    line-height: 1.1em;
+    font-weight: 700;
+    letter-spacing: -.049375rem;
+    font-size: 2.7em;
+}
+.parrafos{
+  font-size: 1.4em;
+  line-height: 1.2em;
+}
+.pregunta{
+  font-size: 1.2em;
+  line-height: 1.4em;
+  letter-spacing: -.049375rem;
+}
+.cont{
+  font-weight: 900;
+  font-size: 3em;
+  color: white;
+}
+
+
+.accordion-button:not(.collapsed) {
+  background: #eaeaea !important;
+  color: #000;
+}
+.accordion-button:focus{
+  -webkit-box-shadow: none;
+}
+
   
   .lines {
     position: absolute;
@@ -69,7 +112,7 @@
     top: -50%;
     left: 0;
     background: linear-gradient(to bottom, transparent 0%, #FF0080 75%, #7928CA 100%);   
-            animation: run 6s 0s infinite;    
+            animation: run 12s 0s infinite;    
             animation-fill-mode: forwards;  
             animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
   }
@@ -85,13 +128,13 @@
   }
   .lines .line:nth-child(3)::after {
     -webkit-animation-delay: 2.5s;
-            animation-delay: 2.5s;
+            animation-delay: 4s;
   }
   
   
   @-webkit-keyframes run {
     0% {
-      top: -50%;
+      top: -10%;
     }
     100% {
       top: 110%;

@@ -1,0 +1,79 @@
+.wold{
+    position: absolute;
+    right: -30%;   
+    width: 100%;
+    z-index: -1;
+}
+.wold:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 50%;
+    width: 100%;
+    pointer-events: none;
+    background: linear-gradient(to bottom,transparent 0,#fff 60%);
+}
+.altura{
+    height: 640px;
+}
+#plane {
+    left: 30%;
+    bottom: 0px;
+    width: 300px;
+    position: absolute;
+    opacity: 0.1;
+}
+
+.titulo{
+   font-size: 4.5rem;
+    line-height: 1.01em;
+    font-weight: 800;
+    letter-spacing: -.049375rem;
+    font-family: inherit;
+}
+.color{
+    position: absolute;
+    filter: blur(50px);
+    z-index: 1;
+    opacity: .15;
+    border-radius: 100%;
+    padding-bottom: 100%;
+    transform: scale(.8);
+
+}
+.color1{   
+    top: -150%;
+    left: 15%;
+    right: -15%;
+    bottom: 40%;
+    background: #ff0080
+}
+.color2{
+    top: -20%;
+    left: -15%;
+    right: 15%;
+    bottom: 20%;
+    background:#0070f3;
+}
+
+@media (max-width: 768px) { 
+    .altura{
+        height: 320px;
+    }
+
+}
+@media (max-width: 575px) { 
+    .altura{
+        height: 280px;
+    }
+    .wold{
+        position: absolute;
+        left: 0;   
+        width: 150%;
+    }
+
+}
+
+

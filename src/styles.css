@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 body{
     overflow-x: hidden;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .center-obj{
     display: grid;
@@ -12,24 +13,71 @@ body{
     border-style: solid !important;
     border-width: 50px 100vw 0 0 !important;
     border-color: transparent var(--colobor) transparent transparent !important;
-
 }
+.borderDown{
+    width: 0;
+    height: 0;
+    border-style: solid !important;
+    border-width:  50px 100vw 0 0 !important;
+    border-color:  var(--colobor)  transparent transparent transparent !important;
+}
+
 .z-index{
-    z-index: 9999;
+    z-index: 999;
 }
 
 /*bgbaderas*/
 .flags{ position: absolute;
     object-position: center center;
     pointer-events: none;
-    border-radius: 50%;
-    box-shadow: var(--shadow-small);
+    border-radius: 50%;   
     image-rendering: optimizespeed;
     animation-name: bgflag;
     animation-duration: 300s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+.text-transition{
+    height: 300px;
+    display: flex;
+    flex-direction: column;   
+    animation-name: trasition;
+    align-items: center;
+    animation-duration: 14s;
+    animation-timing-function: cubic-bezier(0.5, 1, 0.89, 1);
+    animation-iteration-count: infinite;
+    
+}
+.text-transition1 , .text-transition2 ,.text-transition3{
+    height: 100px;
+    font-size:80px;
+    padding-right: 2px;
+    font-weight: 700;
+    letter-spacing: -.05em;
+
+}
+.father-trasition{
+    height: 100px;
+    padding-right: 2px;
+    overflow-y: hidden;
+
+}
+
+
+@keyframes trasition{
+    0%{transform:translateY(0px)}   
+    29%{transform:translateY(0px)}
+
+    30%{transform:translateY(-100px) }   
+    59%{transform:translateY(-100px)}
+
+    60%{transform:translateY(-200px)}    
+    90%{transform:translateY(-200px)}    
+    100%{transform:translateY(0px)} 
+ 
+   
+}
+
 @keyframes bgflag{
     0%{transform:translateX(1600px)}
     to{transform:translateX(-1600px)}
