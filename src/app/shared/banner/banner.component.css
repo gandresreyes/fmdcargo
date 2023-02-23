@@ -1,9 +1,14 @@
 .wold{
     position: absolute;
-    right: -30%;   
+    right: 0;   
     width: 100%;
     z-index: -1;
+    left: 0;
+}.img-word{
+    position: relative;
+    right: -30%;   
 }
+
 .wold:after {
     content: "";
     position: absolute;
@@ -27,9 +32,9 @@
 }
 
 .titulo{
-   font-size: 4.5rem;
+    font-size: 4.5rem;
     line-height: 1.01em;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: -.049375rem;
     font-family: inherit;
 }
@@ -59,19 +64,49 @@
 }
 
 @media (max-width: 768px) { 
+    .titulo{
+        font-size: 2.5rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    .subtitulo{
+        text-align: center;
+    }
     .altura{
-        height: 320px;
+        height: 500px;       
+    }
+    .wold{        
+        left: 0; 
+        bottom:-70% ;
+        display: flex;
+        justify-content: center;   
+    
+    }
+    .wold:after {       
+       display: none;
+        
+    }
+    .img-word{
+        right: 0;
     }
 
 }
 @media (max-width: 575px) { 
     .altura{
-        height: 280px;
+        height: 400px;       
     }
-    .wold{
-        position: absolute;
-        left: 0;   
-        width: 150%;
+    .wold{        
+        left: 0; 
+        bottom:-40% ;
+        display: flex;
+        justify-content: center;   
+    
+    }
+    .wold:after {       
+       display: none;        
+    }
+    .img-word{
+        right: 0;
     }
 
 }

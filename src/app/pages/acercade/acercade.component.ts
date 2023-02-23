@@ -1,5 +1,5 @@
 import { state, style, transition, trigger,animate } from '@angular/animations';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-acercade',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./acercade.component.css'],
   
 })
-export class AcercadeComponent {
+export class AcercadeComponent  implements OnInit{
+  ngOnInit(): void {
+    window.scroll(0, 0)
+  }
 
 }

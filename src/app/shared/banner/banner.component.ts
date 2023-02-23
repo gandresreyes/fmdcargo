@@ -1,7 +1,6 @@
 import { Component, ElementRef, HostListener, Renderer2, ViewChild } from '@angular/core';
 import { state, trigger, style, transition, animate } from '@angular/animations';
 import { AnimationOptions } from 'ngx-lottie';
-
 @Component({
   selector: 'app-banner',
   templateUrl: './banner.component.html',
@@ -24,27 +23,33 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class BannerComponent {
   now:number=0
+  tamanoW:number = window.innerWidth;
+ 
   @ViewChild('plane') plane!:ElementRef
   constructor(private renderer2:Renderer2 ){}
 
   options: AnimationOptions = {
-    path: '/assets/lottie/world.json',    
+    path: './assets/world.json',    
   };
 
+
   styles: Partial<CSSStyleDeclaration> = {
-    filter: 'brightness(0.5)'
+    filter: 'brightness(0.5)',
+    width: '1400px',
+    height:'640px'
+    
   };
   
   @HostListener("window:scroll", [])
   onWindowScroll() {
     this.now = window.scrollY    
-    console.log((this.now)/180)
-    if(this.now){
-      this.renderer2.setStyle(this.plane?.nativeElement,'margin-bottom' , 0.8*  this.now + 'px' )
-      this.renderer2.setStyle(this.plane?.nativeElement,'margin-left' , 2.5 * this.now + 'px' )
-      this.renderer2.setStyle(this.plane?.nativeElement,'opacity' ,  (this.now)/190)
-   
+    if(this.now){    
+      if(( 4.2*this.now)<this.tamanoW){
+        this.renderer2.setStyle(this.plane?.nativeElement,'transform' ,  'translate(' + (2.5 * this.now + 'px,'+ -0.5*  this.now + 'px)'))           
+        this.renderer2.setStyle(this.plane?.nativeElement,'opacity' ,  (this.now)/190)  
+      }   
     }
    
   }
+ 
 }

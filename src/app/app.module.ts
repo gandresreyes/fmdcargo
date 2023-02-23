@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgOptimizedImage } from '@angular/common'
 
+import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,12 +13,14 @@ import { ParadaxComponent } from './shared/paradax/paradax.component';
 import { MundoComponent } from './shared/mundo/mundo.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { BanderasComponent } from './shared/banderas/banderas.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 import { BannerComponent } from './shared/banner/banner.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { ContactenosComponent } from './pages/contactenos/contactenos.component';
+import { AnimacionComponent } from './shared/animacion/animacion.component';
 export function playerFactory() {
   return player;
 }
@@ -32,13 +35,18 @@ export function playerFactory() {
     BanderasComponent,
     BannerComponent,
     AcercadeComponent,
-    ContactenosComponent
+    ContactenosComponent,
+    AnimacionComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
-    BrowserAnimationsModule,    
+    BrowserAnimationsModule,  
+    HttpClientModule, 
+    FormsModule,
+    ReactiveFormsModule,     
     LottieModule.forRoot({ player: playerFactory })
    
   ],

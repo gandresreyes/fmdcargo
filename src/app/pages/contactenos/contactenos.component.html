@@ -1,5 +1,115 @@
-<div class="container" style="height: 100vh;">
-    <div class="row">
+<div style="position: relative;"> 
+    <div class="container " >
+        <div class="row">
+            <div class="d-flex flex-column align-items-center justify-content-center" style=" min-height: 40vh;">
+                <h1 class="titulo">Habla con nuestro equipo de ventas</h1>
+                <h2 class="subcon">Le ayudaremos a encontrar el plan y el precio adecuados para su empresa.</h2>           
 
-    </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-lg-6 mb-5">
+                    <div class="form-contac">
+                        <form class="row g-3 needs-validation" novalidate (ngSubmit)="sendEmail()" [formGroup]="formCorreo">
+                            <div class="col-md-6">
+                            <label for="name" class="form-label">Full name</label>
+                            <input type="text" class="form-control" id="name"  formControlName="nombres" [class.is-invalid]="nombresNV"  >
+                            <div  class="invalid-feedback"><b>Error:</b><span></span>Please enter your name.</div>
+                            </div>
+                            <div class="col-md-6">
+                            <label for="correo" class="form-label">Email</label>
+                            <input type="text" class="form-control" id="correo"   formControlName="correo" [class.is-invalid]="correoNV" >
+                            <div *ngIf="correoNV" class="invalid-feedback"><b>Error:</b><span></span>Please enter your name.</div>
+                            </div>   
+                            <div class="col-md-6">
+                                <label for="Phone" class="form-label">Phone</label>
+                                <input type="text" class="form-control" id="Phone"   formControlName="phone"  [class.is-invalid]="phoneNV">
+                                <div *ngIf="phoneNV" class="invalid-feedback"><b>Error:</b><span></span>Please enter your name.</div>
+                            </div> 
+                            <div class="col-md-6">
+                                <label for="subject" class="form-label">Subject </label>
+                                <input type="text" class="form-control" id="subject"   formControlName="subject" [class.is-invalid]="subjectNV" >
+                                <div *ngIf="subjectNV" class="invalid-feedback"><b>Error:</b><span></span>Please enter your name.</div>
+                            </div>           
+                            <div class="col-md-12">    
+                                <label for="floatingTextarea">Comments</label>                         
+                                <textarea class="form-control" id="floatingTextarea" rows="6" formControlName="mensaje" [class.is-invalid]="mensajeNV" ></textarea>
+                                <div *ngIf="mensajeNV" class="invalid-feedback"><b>Error:</b><span></span>Please enter your name.</div>
+                                
+                            </div>           
+                        
+                        
+                            <div class="col-12 text-end">
+                                <button [disabled]="enviando" class="btn btn-primary " type="submit"><span>{{texto}}</span> 
+                                    <div   *ngIf="enviando" class="spinner-border text-light" role="status">
+                                        <span class="visually-hidden">Loading...</span>
+                                    </div>
+                                </button>
+                                <div>
+                                    <div  *ngIf="enviado" class="alert alert-success d-flex align-items-center alert-dismissible fade show mt-4" role="alert">
+                                        <img class="me-3" src="assets/img//check.svg" width="30" height="30" alt="check">
+                                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>                      
+                                        <div>
+                                            Your message was sent successfully
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </form>
+                    </div> 
+                    <div class="w-ajustable text-center mx-auto mt-2">
+                        <small>
+                            Al enviar este formulario, confirmo que he leído y comprendido la  Declaración de privacidad de Vercel .
+                        </small>    
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 p-sm-4">                                          
+                    <div class=" d-flex justify-content-center align-items-center box-prov flex-column" style="height: 100%; overflow-x: hidden; "> 
+                        <h2 class="subconpro text-center" >Nuestros proveedores</h2>                       
+                       
+                        <div class="d-flex carruselm">
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/avianca.png" alt="">
+                            </div>
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/sky-lease-cargo.png" alt="">
+                            </div>
+    
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/solar-cargo.png" alt="">
+                            </div>
+    
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/ups.png" alt="">
+                            </div>
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/avianca.png" alt="">
+                            </div>
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/sky-lease-cargo.png" alt="">
+                            </div>
+    
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/solar-cargo.png" alt="">
+                            </div>
+    
+                            <div class="marcas">
+                                <img width="300" src="assets/img/prove/ups.png" alt="">
+                            </div>
+                        </div>
+                                           
+                    </div> 
+                </div>                         
+            </div>
+        </div>   
+    </div>   
+    <div class="bg" style="height:600px;"></div>
+    <div class="border" style="--colobor:#ffebeb"></div>
 </div>
+
+<div style="background-color: #ffebeb;">
+    <app-animacion></app-animacion>
+</div>
+
+

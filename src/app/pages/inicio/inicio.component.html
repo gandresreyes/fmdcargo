@@ -1,6 +1,6 @@
 <app-banner></app-banner>
-<div style="position: relative ">
-    <div class="container-fluid bgicons">
+<div  style="position: relative;">
+    <div class="container-fluid bg-white ">
         <div class="container">
             <div class="row bg py-5">
                 <div class="text-center text-dark pb-5">
@@ -52,11 +52,13 @@
         <div style="background-color:#ffebeb ;">
             <div class="container py-4">
                 <div class="row">
-                    <div class="col-lg-6 text-center">
-                        <button class="btn text-white btn-line" style="background-color:#dd0031 ;">Contactanos</button>
+                    <div class="col-lg-6 text-center mb-4">
+                        <button [routerLink]="['contac']" class="btn text-white btn-line"
+                            style="background-color:#dd0031 ;">Contactanos</button>
                     </div>
-                    <div class="col-lg-6 text-center">
-                        <button class="btn text-white btn-line" style="background-color:#dd0031 ;">servicios</button>
+                    <div class="col-lg-6 text-center mb-4">
+                        <button [routerLink]="['contac']" class="btn text-white btn-line"
+                            style="background-color:#dd0031 ;">Servicios</button>
                     </div>
                 </div>
             </div>
@@ -65,19 +67,19 @@
         <div style="background-color:#dd0031 ;">
             <div class="container py-5">
                 <div class="row text-center">
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-3">
                         <h2 class="cont">172</h2>
                         <span class="text-white">Envíos terrestre</span>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-3">
                         <h2 class="cont">7256</h2>
                         <span class="text-white">Envíos aéreos</span>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-3">
                         <h2 class="cont">320</h2>
                         <span class="text-white">Envíos marítimos</span>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 mb-3">
                         <h2 class="cont">7306</h2>
                         <span class="text-white">Carga enviada</span>
                     </div>
@@ -87,7 +89,7 @@
         <div class="borderDown " style="--colobor:#dd0031"></div>
 
     </section>
-    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;height: 80vh">
+    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;height: 80vh;overflow-x: hidden;">
         <app-banderas></app-banderas>
         <div class="col-lg-6 mx-auto z-index">
             <div class="cardflags">
@@ -234,11 +236,14 @@
                 </div>
             </div>
         </div>
-        <div class="borderDown bg-dark" style="--colobor:#ffebeb"></div>
     </div>
+</div>  
+<div style="background-color: #ffebeb;">
+    <app-animacion></app-animacion>
 </div>
-<!--bglines-->
-<!--
+
+    <!--bglines-->
+    <!--
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>

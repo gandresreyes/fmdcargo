@@ -9,9 +9,10 @@ import { AnimationOptions } from 'ngx-lottie';
 })
 export class InicioComponent  implements OnInit  {
   options: AnimationOptions = {
-    path: '/assets/lottie/world.json',    
+    path: './assets/world.json',    
   };   
-  ngOnInit(): void {    
+  ngOnInit(): void {   
+    window.scroll(0, 0) 
    
   } 
   
