@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgOptimizedImage } from '@angular/common'
+import { RouterModule } from "@angular/router";
 
 import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -21,6 +22,7 @@ import { BannerComponent } from './shared/banner/banner.component';
 import { AcercadeComponent } from './pages/acercade/acercade.component';
 import { ContactenosComponent } from './pages/contactenos/contactenos.component';
 import { AnimacionComponent } from './shared/animacion/animacion.component';
+import { ServiciosComponent } from './shared/servicios/servicios.component';
 export function playerFactory() {
   return player;
 }
@@ -36,7 +38,8 @@ export function playerFactory() {
     BannerComponent,
     AcercadeComponent,
     ContactenosComponent,
-    AnimacionComponent
+    AnimacionComponent,
+    ServiciosComponent
     
   ],
   imports: [
@@ -46,9 +49,9 @@ export function playerFactory() {
     BrowserAnimationsModule,  
     HttpClientModule, 
     FormsModule,
-    ReactiveFormsModule,     
-    LottieModule.forRoot({ player: playerFactory })
-   
+    ReactiveFormsModule,
+    RouterModule,     
+    LottieModule.forRoot({ player: playerFactory })   
   ],
   providers: [],
   bootstrap: [AppComponent]

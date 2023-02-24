@@ -81,6 +81,21 @@ body{
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
+
+.animation{
+    animation-name: slide;
+    align-items: center;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes slide{
+    0%{transform:translateX(0px)}  
+    100%{transform:translateX(-1500px)}  
+}
+
 @media (max-width: 768px) { 
     .text-transition1 , .text-transition2 ,.text-transition3{     
         font-size:60px;
@@ -95,7 +110,7 @@ body{
 }
 @keyframes carrusel{
     0%{transform:translateX(0px)}  
-    100%{transform:translateX(-2100px)}  
+    100%{transform:translateX(-1500px)}  
 }
 
 @keyframes trasition{

@@ -7,7 +7,7 @@ import { ContactenosComponent } from './pages/contactenos/contactenos.component'
 const routes: Routes = [
   {path:'',title:'Home | Fmd' ,component:InicioComponent},
   {path:'about',title:'about us | Fmd' ,component:AcercadeComponent},
-  {path:'contac',title:'about us | Fmd' ,component:ContactenosComponent},
+  {path:'contac',title:'contact | Fmd' ,component:ContactenosComponent},
   {path:'',redirectTo:'/',pathMatch:'full'},
 ];
 

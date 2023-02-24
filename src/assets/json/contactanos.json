@@ -1,0 +1,15 @@
+{
+    "es":{
+        "0":"prodcutos",
+        "1": "Cantidad",
+        "2":"Mostrar Todo"     
+        
+    },
+    "eng":{
+        "0":"products ",
+        "1":"Quantity",
+        "2":"View All"
+
+    }
+
+}
