@@ -53,11 +53,11 @@
             <div class="container py-4">
                 <div class="row">
                     <div class="col-lg-6 text-center mb-4">
-                        <button [routerLink]="['contac']" class="btn text-white btn-line"
+                        <button [routerLink]="['contact']" class="btn text-white btn-line"
                             style="background-color:#dd0031 ;">Contactanos</button>
                     </div>
                     <div class="col-lg-6 text-center mb-4">
-                        <button [routerLink]="['contac']" class="btn text-white btn-line"
+                        <button [routerLink]="['/']" fragment="services" class="btn text-white btn-line"
                             style="background-color:#dd0031 ;">Servicios</button>
                     </div>
                 </div>
@@ -89,11 +89,11 @@
         <div class="borderDown " style="--colobor:#dd0031"></div>
 
     </section>
-    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;height: 80vh;overflow-x: hidden;">
+    <div class="container-fluid  d-flex align-items-center py-5" style="position: relative;overflow-x: hidden;">
         <app-banderas></app-banderas>
         <div class="col-lg-6 mx-auto z-index">
-            <div class="cardflags">
-                <div class="px-4 py-3 text-center ">
+            <div class="cardflags ">
+                <div class="px-4 py-5 text-center ">
                     <div class="d-flex justify-content-center z-index">
                         <ng-lottie height="160px" [options]="options"
                             [styles]="{'filter': 'drop-shadow(0px 0px 0px #0005)'}"></ng-lottie>
@@ -104,7 +104,6 @@
             </div>
         </div>
     </div>
-
     <div>
         <div class="border" style="--colobor:#ffebeb"></div>
         <div style="background-color: #ffebeb;">
@@ -238,13 +237,12 @@
         </div>
     </div>
 </div>
-<div class="borderDown " style="--colobor:#ffebeb"></div>  
+<div class="borderDown " style="--colobor:#ffebeb"></div> 
+<div id="services">
+    <app-servicios></app-servicios>
+</div> 
+<app-animacion></app-animacion>
 
-<app-servicios></app-servicios>
-<div class="border" style="--colobor:#ffebeb"></div>
-<div style="background-color: #ffebeb;">
-    <app-animacion></app-animacion>
-</div>
 
     <!--bglines-->
     <!--

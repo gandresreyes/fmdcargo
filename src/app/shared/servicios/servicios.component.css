@@ -1,3 +1,14 @@
-.carousel-indicators {   
-    bottom: -15%;
+.card:hover{
+    border: 1px solid black;
+}
+.h-100{height: 100%;}
+
+.card-img{        
+    object-fit: cover;
+    height: 180px;      
+    object-position: left top;     
+    
+}
+.text-justify{
+    text-align: justify;
 }
